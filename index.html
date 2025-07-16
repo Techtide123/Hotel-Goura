@@ -1,0 +1,1319 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Welcome To Coco Heritage</title>
+	<meta name="description" content="Professional Creative Template" />
+	<meta name="author" content="IG Design">
+	<meta name="keywords"
+		content="ig design, website, design, html5, css3, jquery, creative, clean, animated, portfolio, blog, one-page, multi-page, corporate, business," />
+	<meta property="og:title" content="Professional Creative Template" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="470" />
+	<meta property="og:image:height" content="246" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="Professional Creative Template" />
+	<meta name="twitter:card" content="" />
+	<meta name="twitter:site" content="https://twitter.com/IvanGrozdic" />
+	<meta name="twitter:domain" content="http://ivang-design.com/" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="Professional Creative Template" />
+	<meta name="twitter:image" content="http://ivang-design.com/" />
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#212121" />
+	<meta name="msapplication-navbutton-color" content="#212121" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#212121" />
+
+	<!-- Web Fonts 
+	================================================== -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<!-- slider css links -->
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/ionicons.min.css" />
+	<link rel="stylesheet" href="css/datepicker.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/owl.transitions.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/colors/color.css" />
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="coco-img/logo.jpg">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+	<!-- social media icon links -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
+
+
+
+
+
+
+
+
+	<!--font family licks for slider-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+	/* Container styling */
+	.image-container {
+		width: 65px;
+		height: 65px;
+		overflow: hidden;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 91px;
+		padding-top: 11px;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-bottom: 4px;
+		transition: transform 0.3s ease-in-out;
+		/* Smooth transition effect on hover */
+	}
+
+	/* Image styling */
+	.image-container img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		/* Maintain aspect ratio and cover the container */
+		border-radius: 10px;
+		/* Match the container's border-radius for a cohesive look */
+	}
+
+	.image-container:hover {
+		transform: scale(1.1);
+		/* Scale the container on hover (adjust the scale factor as needed) */
+	}
+
+
+	.portfolio-overlay .magnify-icon {
+		margin: 70px 5px;
+	}
+
+
+	@media (min-width: 992px) {
+		.col-lg-3 {
+			max-width: 20%;
+		}
+
+		.tt {
+			max-width: 25%;
+
+		}
+
+		.hero-text {
+			font-size: 80px;
+			font-weight: 1000;
+		}
+
+
+	}
+
+
+
+	.galleryimages {
+		height: 300px;
+		width: 300px;
+		margin-top: 14px;
+	}
+
+
+
+
+
+	.slide__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		/* Black with 50% opacity */
+		z-index: 1;
+	}
+
+	.slide__figure-inner {
+		position: relative;
+	}
+
+	.slide__figure-img {
+		position: relative;
+		z-index: 0;
+		/* Ensure the image is below the overlay */
+	}
+
+
+	@media (max-width: 767px) {
+		.hero-text {
+			font-size: 35px;
+			line-height: 1.4;
+		}
+	}
+
+
+
+	/* Define star colors */
+	.star-color {
+		color: #FFD700;
+		/* Yellow color for filled stars */
+	}
+
+	/* Add color for empty stars */
+	.room-per .fa-star:not(.star-color) {
+		color: #C0C0C0;
+		/* Grey color for empty stars */
+	}
+	
+	
+	.main-cursiv-heading {
+    font-family: 'emoji', cursive !important;
+}
+</style>
+
+<body>
+
+	<!-- <div class="loader">
+		<div class="loader__figure"></div>
+	</div> -->
+
+	<svg class="hidden">
+		<svg id="icon-nav" viewBox="0 0 152 63">
+			<title>navarrow</title>
+			<path
+				d="M115.737 29L92.77 6.283c-.932-.92-1.21-2.84-.617-4.281.594-1.443 1.837-1.862 2.765-.953l28.429 28.116c.574.57.925 1.557.925 2.619 0 1.06-.351 2.046-.925 2.616l-28.43 28.114c-.336.327-.707.486-1.074.486-.659 0-1.307-.509-1.69-1.437-.593-1.442-.315-3.362.617-4.284L115.299 35H3.442C2.032 35 .89 33.656.89 32c0-1.658 1.143-3 2.552-3H115.737z" />
+		</svg>
+	</svg>
+
+
+	<!-- Nav and Logo
+	================================================== -->
+
+	<script src="header.js"></script>
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+
+	<!--============= home page starts here =============-->
+
+	<div class="section background-dark over-hide" id="home">
+		<div class="hero-center-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-10 col-sm-8 parallax-fade-top" style="margin-top: 150px;">
+						<div class="hero-text">
+  <h1  style="
+    color: white;
+    font-size: 66px;
+    font-weight: 500;
+    font-family: 'emoji';
+        letter-spacing: 2px;
+    word-spacing: 5px;
+  ">
+    Welcome To Coco Heritage Baga Resort 
+  </h1>
+</div>
+
+					</div>
+					<div class="col-12 mt-3 parallax-fade-top">
+						<div class="booking-hero-wrap">
+							<div class="row justify-content-center">
+								<div class="col-5 no-mob">
+									<div class="input-daterange input-group" id="flight-datepicker">
+										<div class="row">
+											<div class="col-6">
+												<div class="form-item">
+													<span class="fontawesome-calendar"></span>
+													<input class="input-sm" type="text" autocomplete="off"
+														id="start-date-1" name="start" placeholder="check-in date"
+														data-date-format="DD, MM d" />
+													<span class="date-text date-depart"></span>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="form-item">
+													<span class="fontawesome-calendar"></span>
+													<input class="input-sm" type="text" autocomplete="off"
+														id="end-date-1" name="end" placeholder="check-out date"
+														data-date-format="DD, MM d" />
+													<span class="date-text date-return"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-5 no-mob">
+									<div class="row">
+										<div class="col-6">
+											<select name="adults" class="wide">
+												<option data-display="adults">adults</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+										<div class="col-6">
+											<select name="children" class="wide">
+												<option data-display="children">children</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4 col-lg-2">
+									<a class="booking-button" href="https://cocoheritageresort.bookingjini.com">book
+										now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideshow">
+			<div class="slide slide--current parallax-top">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(coco-img/outdoor/19.jpeg)"></div>
+						<div class="slide__figure-reveal"></div>
+						<d
+						
+						
+						.main-cursiv-heading {
+    font-family: 'Playball', cursive;
+}iv class="slide__overlay"></div>
+					</div>
+				</figure>
+			</div>
+			<div class="slide parallax-top">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(coco-img/outdoor/3.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+						<div class="slide__overlay"></div>
+					</div>
+				</figure>
+			</div>
+			<div class="slide parallax-top">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(coco-img/outdoor/5.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+						<div class="slide__overlay"></div>
+					</div>
+				</figure>
+			</div>
+			<!-- revealer -->
+			<div class="revealer">
+				<div class="revealer__item revealer__item--left"></div>
+				<div class="revealer__item revealer__item--right"></div>
+			</div>
+			<nav class="arrow-nav fade-top">
+				<button class="arrow-nav__item arrow-nav__item--prev">
+					<svg class="icon icon--nav">
+						<use xlink:href="#icon-nav"></use>
+					</svg>
+				</button>
+				<button class="arrow-nav__item arrow-nav__item--next">
+					<svg class="icon icon--nav">
+						<use xlink:href="#icon-nav"></use>
+					</svg>
+				</button>
+			</nav>
+			<!-- navigation -->
+			<nav class="nav fade-top">
+				<button class="nav__button">
+					<span class="nav__button-text"></span>
+				</button>
+				<h2 class="nav__chapter">discover your paradise</h2>
+				<div class="toc">
+					<a class="toc__item" href="#entry-1">
+						<span class="toc__item-title">discover your paradise</span>
+					</a>
+					<a class="toc__item" href="#entry-2">
+						<span class="toc__item-title">unpretentious comfort</span>
+					</a>
+					<a class="toc__item" href="#entry-3">
+						<span class="toc__item-title">Where luxury meets leisure</span>
+					</a>
+				</div>
+			</nav>
+			<!-- little sides -->
+			<div class="slideshow__indicator"></div>
+			<div class="slideshow__indicator"></div>
+		</div>
+	</div>
+
+	<!--<div class="section padding-top-bottom over-hide" id="about">-->
+	<!--	<div class="container">-->
+	<!--		<div class="row">-->
+	<!--			<div class="col-md-6 align-self-center">-->
+	<!--				<div class="row justify-content-center">-->
+	<!--					<div class="col-10">-->
+	<!--						<div class="subtitle text-center mb-4">hotel White Castle Kinnaur</div>-->
+	<!--						<h2 class="text-center">About KINNAUR</h2>-->
+	<!--						<p class=" mt-5" style="text-align: justify;">-->
+	<!--							The land of goblin tale and fantasies - Kinnaur has a stunning topography of thriving-->
+	<!--							bottle green valley, orchards, and vineyards, snow dressed peak and wintry arid region-->
+	<!--							mountains. It is a boundary district of Himachal Pradesh. Moreover, Kinnaur is also-->
+	<!--							prosperous in flora & fauna. The far-flung zone of Kinnaur, Lahaul & Spiti is vault-->
+	<!--							together by a well heeled enlightening convention, rivers, vertical mountains, valleys-->
+	<!--							and passes.-->
+	<!--						</p>-->
+	<!--						<p style="text-align: justify;">-->
+	<!--							All necessary amenities are presented at these distant places suitable to set of-->
+	<!--							connections of car competent infrastructure. The usual exquisiteness of the province is-->
+	<!--							finely tuned by generous and sociable individuals who till up to date times of yore-->
+	<!--							subsisted in sheltered remoteness. Kinnaur, it is-->
+	<!--							whispered, knock out from the-->
+	<!--							outer space as a souvenir from the divinity.-->
+	<!--						</p>-->
+	<!--						<a class=" btn btn-primary" href="about.html"-->
+	<!--							style="margin-left: 2px; margin-top: 0px; ">View More</a>-->
+	<!--					</div>-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--			<div class="col-md-6 mt-4 mt-md-0">-->
+	<!--				<div class="img-wrap">-->
+	<!--					<img src="myimage/images/23.jpeg" alt="">-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--		</div>-->
+	<!--	</div>-->
+	<!--</div>-->
+	<!--============= home page ends here =============-->
+
+
+
+
+
+
+	<div class="section padding-top-bottom over-hide" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 align-self-center">
+					<div class="row justify-content-center">
+						<div class="col-10">
+							<div class="subtitle text-center mb-4">Welcome To Our Property</div>
+							<h2 class="text-center">About Us</h2>
+							<p class=" mt-5" style="text-align: justify; font-size: 15px; font-weight: 400;">
+								Coco Heritage Baga Resort is an exquisite hotel that offers a perfect blend of luxury
+								and comfort. Located in the heart of Baga, it is an ideal destination for travelers
+								looking to explore the beautiful beaches and buzzing nightlife of Goa. The resort boasts
+								elegantly furnished rooms, well-equipped with modern amenities to cater to the needs of
+								guests. The in-house restaurant serves delicious local and international cuisines
+								prepared by expert chefs. The hotel also features a swimming pool, spa, and fitness
+								center for guests to relax and rejuvenate. With its stunning architecture and warm
+								hospitality, Coco Heritage Baga Resort promises an unforgettable stay for all.
+							</p>
+
+							<a class=" btn btn-primary bk-btn"
+								href="https://cocoheritageresort.bookingjini.com/property"
+								style=" margin-top: 0px; ">Book Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mt-4 mt-md-0">
+					<div class="img-wrap">
+						<img src="coco-img/outdoor/19.jpeg" alt=""
+							style="background-position: center; background-size: cover; object-fit: cover; height: 500px;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="section padding-top-bottom over-hide background-grey">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-md-8 align-self-center">
+					<div class="subtitle with-line text-center ">Explore Coco Heritage</div>
+					<h3 class="text-center padding-bottom-small mt-3" style="padding-bottom: 25px;">Our Accommodations
+					</h3>
+				</div>
+				<div class="section clearfix"></div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-md-4">
+					<div class="room-box background-white">
+						<div class="room-name">Deluxe room</div>
+						<div class="room-per">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<img src="coco-img/Deluxe/1.jpg" alt="" width="540" height="361"
+							style="height: 250px; object-fit: cover;">
+						<div class="room-box-in">
+							<h5 class="">Deluxe room</h5>
+							<p class="mt-3">The Coco Heritage Baga Resort's DELUX ROOM is a spacious and comfortable
+								accommodation that offers guests a truly luxurious experience. </p>
+							<a class="mt-1 btn btn-primary"
+								href="https://cocoheritageresort.bookingjini.com/property">book now </a>
+							<div class="room-icons mt-4 pt-4">
+								<img src="https://ivang-design.com/thalia/img/5@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/2@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/3@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/1@2x.svg" alt="" width="23" height="23">
+								<a href="deluxe-room.html">full info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt-4 mt-md-0">
+					<div class="room-box background-white">
+						<div class="room-name">Super Delux Room</div>
+						<div class="room-per">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<img src="coco-img/super-deluxe/2.jpg" alt="" width="540" height="361"
+							style="height: 250px; object-fit: cover;">
+						<div class="room-box-in">
+							<h5 class="">Super Delux Room </h5>
+							<p class="mt-3">The Super Deluxe Room at Coco Heritage Baga Resort is a spacious and
+								luxurious accommodation option that offers guests a comfortable and relaxing stay. </p>
+							<a class="mt-1 btn btn-primary"
+								href="https://cocoheritageresort.bookingjini.com/property">book now </a>
+							<div class="room-icons mt-4 pt-4">
+								<img src="https://ivang-design.com/thalia/img/4@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/2@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/6@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/3@2x.svg" alt="" width="23" height="23">
+								<a href="super-deluxe-room.html">full info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mt-4 mt-md-0">
+					<div class="room-box background-white">
+						<div class="room-name">Premium Room</div>
+						<div class="room-per">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						<img src="coco-img/premium/3.jpg" alt="" width="540" height="361"
+							style="height: 250px; object-fit: cover;">
+						<div class="room-box-in">
+							<h5 class="">Premium Room</h5>
+							<p class="mt-3">Welcome to the Premium Room of Coco Heritage Baga Resort, where comfort
+								meets affordability and enhanced amenities ensure a truly relaxing stay. </p>
+							<a class="mt-1 btn btn-primary"
+								href="https://cocoheritageresort.bookingjini.com/property">book now </a>
+							<div class="room-icons mt-4 pt-4">
+								<img src="https://ivang-design.com/thalia/img/4@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/2@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/6@2x.svg" alt="" width="23" height="23">
+								<img src="https://ivang-design.com/thalia/img/3@2x.svg" alt="" width="23" height="23">
+								<a href="premium-room.html">full info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--========== services section starts here ==========-->
+	<div class="container-fluid mb-5 container">
+		<div class="text-center mt-5">
+			<!--<div class="subtitle with-line text-center mb-4">elegant Services</div>-->
+			<h1 style="font-size: 2.7rem;">Our Services</h1>
+		</div>
+		<div class="row" style="justify-content: center;">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/car-rear.png" alt="" style="height: 60px; width: 60px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Taxi Services </h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/tv-retro.png" alt="" style="height: 70px; width: 70px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Flat Tv</h5>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/garden.png" alt="" style="height: 60px; width: 60px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Garden View</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/air-conditioner.png" alt="" style="height: 60px; width: 60px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Air conditioner</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: -45px; justify-content: center;">
+			<!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="box">
+                <div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+                    <img src="myimage/icon/tea.png" alt="" style="height: 60px; width: 60px;">
+                    <h5 style="margin-top: 10px; font-size:1.1rem" >Tea Maker</h5>
+                </div>
+            </div>
+        </div>
+		
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="box">
+                <div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+                    <img src="myimage/icon/wifee.png" alt="" style="height: 60px; width: 60px;">
+                    <h5 style="margin-top: 10px; font-size:1.1rem" > Free Wifi</h5>
+                </div>
+            </div>
+        </div> -->
+			<!--    <div class="col-12 col-sm-6 col-md-4 col-lg-3">-->
+			<!--           <div class="box">-->
+			<!--            <div class="our-services backups" style="    display: flex;-->
+			<!--justify-content: center;-->
+			<!--align-items: center;-->
+			<!--flex-direction: column;">-->
+			<!--                <img src="myimage/icon/fires.png" alt="" style="height: 60px; width: 60px;">-->
+			<!--                <h5 style="margin-top: 10px; font-size:1.1rem" >Fire Places</h5>-->
+			<!--            </div>-->
+			<!--        </div>-->
+			<!--    </div>-->
+			<!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="box">
+                <div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+                    <img src="myimage/icon/walking.png" alt="" style="height: 60px; width: 60px;">
+                    <h5 style="margin-top: 10px; font-size:1.1rem" >Walkabouts</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="box">
+                <div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+                    <img src="myimage/icon/tank-water.png" alt="" style="height: 60px; width: 60px;">
+                    <h5 style="margin-top: 10px; font-size:1.1rem" >Hot Water</h5>
+                </div>
+            </div>
+        </div> -->
+		</div>
+		<div class="row" style="margin-top: 15px; justify-content: center;">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/car-garage.png" alt="" style="height: 60px; width: 60px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Free Parking</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/lightbulb-on.png" alt="" style="height: 60px; width: 60px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Emergency Light</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/phone-call.png" alt="" style="height: 60px; width: 60px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Intercom</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="box">
+					<div class="our-services backups" style="    display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;">
+						<img src="myimage/icon/dryer-alt.png" alt="" style="height: 60px; width: 60px;">
+						<h5 style="margin-top: 10px; font-size:1.1rem">Laundry on Call</h5>
+					</div>
+				</div>
+			</div>
+			<!--     <div class="col-12 col-sm-6 col-md-4 col-lg-3">-->
+			<!--<div class="box">-->
+			<!--             <div class="our-services backups" style="    display: flex;-->
+			<!--	justify-content: center;-->
+			<!--	align-items: center;-->
+			<!--	flex-direction: column;">-->
+			<!--                 <img src="myimage/icon/user-headset.png" alt="" style="height: 60px; width: 60px;">-->
+			<!--                 <h5 style="margin-top: 10px; font-size:1.1rem" >Good Services</h5>-->
+			<!--             </div>-->
+			<!--         </div>-->
+			<!--     </div>-->
+		</div>
+	</div>
+	<!--========== services section ends here ==========-->
+
+
+
+
+	<!--=============== backgrond image sliding section ===============-->
+
+	<!--<section class="discount-action pt-0">-->
+	<!--	<div class="" style="position: relative;-->
+	<!--   z-index: 1;">-->
+	<!--		<div class="call-banner" style="    background: url(newimge/aryan/resortview/1.jpeg) no-repeat;-->
+	<!--	background-position: bottom;-->
+	<!--	background-size: cover;-->
+	<!--	background-attachment: fixed;-->
+	<!--	position: relative;-->
+	<!--	overflow: hidden; -->
+	<!--	">-->
+	<!--			<div class="row d-flex align-items-center" style="display: flex!important;">-->
+	<!--				<div class="col-lg-6 col-md-6 p-0" style="background: #162241 !important; padding: 0!important;">-->
+	<!--					<div class="call-banner-inner text-center bg-navy"-->
+	<!--						style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 100px;">-->
+	<!--						<h4 class="white" style="    color: #fff !important; margin-top: 4rem; font-size: 1.2rem;-->
+	<!--					">SUMMER SPECIAL UPTO 25% OFF</h4>-->
+	<!--						<h2 class="white mb-4" style="    font-size:30px;-->
+	<!--					font-weight: 500; color: #fff !important;     margin-bottom: 4rem !important; margin-top: 4rem;">SPEND THE BEST-->
+	<!--							VACATION WITH US <br>THE NIGHTS OF Stadia Inn</h2>-->
+	<!--						<a class="booking-button" href="https://cocoheritageresort.bookingjini.com" style="width: 300px; ">book now</a>-->
+	<!--					</div>-->
+	<!--				</div>-->
+	<!--				<div class="col-lg-6 col-md-6 p-0"></div>-->
+	<!--			</div>-->
+	<!--		</div>-->
+	<!--	</div>-->
+	<!--</section>-->
+	<!--=============== backgrond image sliding section ===============-->
+
+	<!--================ gallery section starts here ================-->
+	<div class="section padding-top-bottom over-hide" style="padding-top: 30px;">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 align-self-center">
+					<!--<div class="subtitle with-line text-center mb-4">  gallery</div>-->
+					<h3 class="text-center padding-bottom-small">Our Gallery</h3>
+				</div>
+				<div class="section clearfix"></div>
+				<div class="col-md-4">
+					<a href="coco-img/outdoor/1.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/outdoor/1.jpg" alt="" class="galleryimages">
+						</div>
+					</a>
+				</div>
+
+
+				<!-- ******* -->
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/premium/2.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/premium/2.jpg" alt="" class="galleryimages">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/Deluxe/2.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/Deluxe/2.jpg" alt="" class="galleryimages">
+						</div>
+					</a>
+				</div>
+
+
+
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/outdoor/11.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/outdoor/11.jpg" alt="" class="galleryimages">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/super-deluxe/3.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/super-deluxe/3.jpg" alt="" class="galleryimages">
+						</div>
+					</a>
+				</div>
+
+
+
+
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/premium/5.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/premium/5.jpg" alt="" class="galleryimages">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/outdoor/17.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/outdoor/17.jpg" alt="" class="galleryimages" style="">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/outdoor/15.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/outdoor/15.jpg" alt="" class="galleryimages" style="">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 mt-4 mt-md-0">
+					<a href="coco-img/super-deluxe/6.jpg" data-fancybox="gallery">
+						<div class="img-wrap gallery-small">
+							<img src="coco-img/super-deluxe/6.jpg " alt="" class="galleryimages">
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--================ gallery section ends here ================-->
+
+
+
+
+
+
+	<!--===================== testimonyal section starts here =====================-->
+	<div class="section padding-top-bottom over-hide" style="padding-top: 0px !important;">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 align-self-center">
+					<div class="subtitle with-line text-center ">Testimonials</div>
+					<h3 class="text-center padding-bottom-small mt-3" style="padding-bottom: 25px; font-size: 2.7rem;">
+						What Clients say About Us</h3>
+				</div>
+				<div class="section clearfix"></div>
+				<div class="slide-container swiper">
+					<div class="slide-content">
+						<div class="card-wrapper swiper-wrapper" style="padding-bottom: 10px;">
+
+							<div class="card swiper-slide"
+								style=" box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.218); height:350px;">
+								<div class="image-content">
+									<span class="overlay"></span>
+
+									<div class="card-image">
+										<img src="myimage/icon/man-1.png" alt="" class="card-img">
+									</div>
+								</div>
+
+								<div class="card-content">
+									<h2 class="name">Deep Raj</h2>
+									<p class="description">
+										I had a wonderful stay at Coco Heritage Baga Resort, which offers excellent
+										quality at a very affordable price.
+									</p>
+
+
+								</div>
+							</div>
+							<div class="card swiper-slide"
+								style=" box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.218); height:350px;">
+								<div class="image-content">
+									<span class="overlay"></span>
+
+									<div class="card-image">
+										<img src="myimage/icon/man-2.png" alt="" class="card-img">
+									</div>
+								</div>
+
+								<div class="card-content">
+									<h2 class="name">Ajay sing</h2>
+									<p class="description">
+										The Best Resort ever. It's amazing staying here. I have visited this place 5-6
+										times. Staff everyone there is very helpful.
+									</p>
+
+
+								</div>
+							</div>
+							<div class="card swiper-slide"
+								style=" box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.218); height:350px;">
+								<div class="image-content">
+									<span class="overlay"></span>
+
+									<div class="card-image">
+										<img src="myimage/icon/man-3.png" alt="" class="card-img">
+									</div>
+								</div>
+
+								<div class="card-content">
+									<h2 class="name">
+										Mahesh Hasabe
+									</h2>
+									<p class="description">
+										Our Stay at Coco Heritage was very pleasant. The food is Delicious 😋. Service
+										is very good.
+										The pool is clean and well maintained .
+									</p>
+
+
+								</div>
+							</div>
+							<div class="card swiper-slide"
+								style=" box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.218); height:350px;">
+								<div class="image-content">
+									<span class="overlay"></span>
+
+									<div class="card-image">
+										<img src="myimage/icon/man-2.png" alt="" class="card-img">
+									</div>
+								</div>
+
+								<div class="card-content">
+									<h2 class="name">Abdul Bhai</h2>
+									<p class="description">
+										we stayed for 2 days reception staff's are very kind while check in & check out.
+									</p>
+
+
+								</div>
+							</div>
+							<div class="card swiper-slide"
+								style=" box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.218); height:350px;">
+								<div class="image-content">
+									<span class="overlay"></span>
+
+									<div class="card-image">
+										<img src="myimage/icon/woman-1.png" alt="" class="card-img">
+									</div>
+								</div>
+
+								<div class="card-content">
+									<h2 class="name">Kritika Singh</h2>
+									<p class="description">
+										One of the best resort in Goa with reasonable price.. Best Service. Being in
+										Coco Heritage for more than 4-5 times.
+									</p>
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="swiper-button-next swiper-navBtn"></div>
+					<div class="swiper-button-prev swiper-navBtn"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--===================== testimonyal section ends here =====================-->
+
+
+
+
+
+	<!--=============== contact section starts here ===============-->
+	<!-- Contact 4 - Bootstrap Brain Component -->
+	<!-- <section class="bg-light py-3 py-md-5" id="contact" style="">-->
+	<!--		<div class="container">-->
+	<!--			<div class="row justify-content-md-center">-->
+	<!--				<div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">-->
+	<!--					<h2 class="display-5 mb-4 mb-md-5 text-center" style="font-size: 2.7rem;">Get in Touch</h2>-->
+	<!--					<hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--		</div>-->
+
+
+	<!--		<div class="container">-->
+	<!--			<div class="row gy-3 gy-md-4 gy-lg-0 align-items-xl-center">-->
+	<!--				<div class="col-12 col-lg-6">-->
+	<!--					<img class="img-fluid rounded" loading="lazy"-->
+	<!--						src="newimge/swag/1.jpeg" alt="Get in Touch" style="height: 532px; width: 570px; background-position: center; object-fit: cover;">-->
+	<!--				</div>-->
+	<!--				<div class="col-12 col-lg-6">-->
+	<!--					<div class="row justify-content-xl-center">-->
+	<!--						<div class="col-12 col-xl-11">-->
+	<!--							<div class="bg-white border rounded shadow-sm overflow-hidden">-->
+
+	<!--								<form action="#!">-->
+	<!--									<div class="row gy-4 gy-xl-5 p-4 p-xl-5">-->
+	<!--										<div class="col-12" style="  margin-bottom: 25px;">-->
+	<!--											<label for="fullname" class="form-label">Full Name <span-->
+	<!--													class="text-danger">*</span></label>-->
+	<!--											<input type="text" class="form-control" id="fullname" name="fullname"-->
+	<!--												value="" required>-->
+	<!--										</div>-->
+	<!--										<div class="col-12 col-md-6">-->
+	<!--											<label for="email" class="form-label">Email <span-->
+	<!--													class="text-danger">*</span></label>-->
+	<!--											<div class="input-group">-->
+	<!--												<span class="input-group-text">-->
+	<!--													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"-->
+	<!--														fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">-->
+	<!--														<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 -->
+	<!--							4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326--->
+	<!--							.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />-->
+	<!--													</svg>-->
+	<!--												</span>-->
+	<!--												<input type="email" class="form-control" id="email" name="email"-->
+	<!--													value="" required>-->
+	<!--											</div>-->
+	<!--										</div>-->
+	<!--										<div class="col-12 col-md-6">-->
+	<!--											<label for="phone" class="form-label">Phone Number</label>-->
+	<!--											<div class="input-group">-->
+	<!--												<span class="input-group-text">-->
+	<!--													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"-->
+	<!--														fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">-->
+	<!--														<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 1-->
+	<!--							7.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1--->
+
+	<!--1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.-->
+	<!--612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.-->
+	<!--745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.-->
+	<!--01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />-->
+	<!--													</svg>-->
+	<!--												</span>-->
+	<!--												<input type="tel" class="form-control" id="phone" name="phone" value="">-->
+	<!--											</div>-->
+	<!--										</div>-->
+	<!--										<div class="col-12" style="margin-top: 25px; ">-->
+	<!--											<label for="subject" class="form-label">Subject <span-->
+	<!--													class="text-danger">*</span></label>-->
+	<!--											<input type="text" class="form-control" id="subject" name="subject" value=""-->
+	<!--												required>-->
+	<!--										</div>-->
+	<!--										<div class="col-12" style="margin-top: 25px;">-->
+	<!--											<label for="message" class="form-label">Message <span-->
+	<!--													class="text-danger">*</span></label>-->
+	<!--											<textarea class="form-control" id="message" name="message" rows="3"-->
+	<!--												required></textarea>-->
+	<!--										</div>-->
+	<!--										<div class="col-12" style="margin-top: 10px; ">-->
+	<!--											<div class="d-grid">-->
+	<!--												<button class="btn btn-primary btn-lg" type="submit"-->
+	<!--													style="border-radius: 50px;">Send Message</button>-->
+	<!--											</div>-->
+	<!--										</div>-->
+	<!--									</div>-->
+	<!--								</form>-->
+
+	<!--							</div>-->
+	<!--						</div>-->
+	<!--					</div>-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--		</div>-->
+	<!--	</section> -->
+	<!--<div style="height:470px; width: 100%;">-->
+	<!--		<iframe-->
+	<!--		src="-->
+	<!--		https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d276.5175294027758!2d78.25142200698986!3d31.533596471921463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39066a2c6999500b%3A0xa27e8a5975f39f5c!2sThe%20White%20Castle!5e0!3m2!1sen!2sin!4v1710502255008!5m2!1sen!2sin"-->
+	<!--			height="470" allowfullscreen style="width: 100%;">-->
+	<!--		</iframe>-->
+	<!--	</div>-->
+	<!--=============== contact section ends here ===============-->
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="footer.js"></script>
+
+
+
+
+
+	<!--================= footer section starts here ====================-->
+	<!-- <div class="section padding-top-bottom-small background-black over-hide footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 text-center text-md-left" style="max-width: 24.33333%;">
+					<img src="myimage/logo.jpg" alt="" width="77" height="45" style="height: 60px;">
+					<p class="color-grey mt-4">Kinnaur, it is whispered, knock out from the outer space as a souvenir
+						from the divinity.
+
+					</p>
+					<div class="sub" style="  
+					display: flex;
+					width: 140px;
+					justify-content: space-between;
+			">
+						<a href="#" class="fa fa-facebook" style="color: #ccc"></a>
+						<a href="#" class="fa fa-twitter" style="color: #ccc"></a>
+						<a href="#" class="fa fa-google" style="color: #ccc"></a>
+						<a href="#" class="fa fa-instagram" style="color: #ccc"></a>
+					</div>
+				</div>
+				<div class="col-md-4 text-center text-md-left" style="max-width: 23.33333%;">
+					<h6 class="color-white mb-3">Quick Links</h6>
+
+					<a href="index.html">Home</a>
+					<a href="rooms.html">Rooms</a>
+					<a href="about.html">About Us</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+
+				<div class="col-md-5 mt-4 mt-md-0 text-center text-md-left logos-footer" style="max-width: 27.33333%;;">
+					<h6 class="color-white mb-3">about us</h6>
+			
+					<div class="main-div" style="margin-top: 0px;">
+
+						<div class="header-top-left" style="color: white; ">
+							<div><i class="ion-ios-location-outline" style="margin-right: 6px;"></i> thewhitecastlekalpa
+								, near bus stop , vpo kalpa tehsil kalpa, Kinnaur himachal Pradesh, 172108</div>
+							<div><i class="fa fa-phone" aria-hidden="true" style="margin-right: 6px;"></i>+91-9857200987
+							</div>
+							<div><i class="fa fa-phone" aria-hidden="true" style="margin-right: 6px;"></i>+91-8894076987
+							</div>
+							<div><i class="fa fa-envelope" style="margin-right: 6px;"></i>
+								thewhitecastlekalpa@gmail.com</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center text-md-left" style="max-width: 23.33333%;">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3400.6565489082573!2d78.25156539999999!3d31.533591699999995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710227736315!5m2!1sen!2sin"
+						width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="section py-4 background-dark over-hide footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+					<p>2024 © <span style="color: orange; font-weight: 900;">White Castle Kinnaur</span>. All rights
+						reserved.</p>
+				</div>
+		
+				<div class="col-md-6 text-center text-md-right">
+		
+					<p>Designed &amp; Developed By<span><a href="https://bookingjini.com"
+								style="color: orange; font-weight: 900;">Bookingjini</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!--==================== footer section ends here ====================-->
+
+
+	<div class="scroll-to-top"></div>
+	<!-- slider scripts -->
+	<script src="js/slider.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+
+	<!-- JAVASCRIPT
+    ================================================== -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/flip-slider.js"></script>
+	<script src="js/reveal-home.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!-- JAVASCRIPT FILTER  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<!-- Mixitup -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js'></script>
+	<!-- fancybox -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+	<!-- Fancybox js -->
+	<script>
+		/*Downloaded from https://www.codeseek.co/ezra_siton/mixitup-fancybox3-JydYqm */
+		// 1. querySelector
+		var containerEl = document.querySelector(".portfolio-item");
+		// 2. Passing the configuration object inline
+		//https://www.kunkalabs.com/mixitup/docs/configuration-object/
+		var mixer = mixitup(containerEl, {
+			animation: {
+				effects: "fade translateZ(-100px)",
+				effectsIn: "fade translateY(-100%)",
+				easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+			}
+		});
+		// fancybox insilaze & options //
+		$("[data-fancybox]").fancybox({
+			loop: true,
+			hash: true,
+			transitionEffect: "slide",
+			/* zoom VS next////////////////////
+			clickContent - i modify the deafult - now when you click on the image you go to the next image - i more like this approach than zoom on desktop (This idea was in the classic/first lightbox) */
+			clickContent: function (current, event) {
+				return current.type === "image" ? "next" : false;
+			}
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+
+	<script>
+		// Define variables
+		var currentIndex = 0;
+		var slides = document.querySelectorAll('.slideshow .slide');
+		var totalSlides = slides.length;
+
+		// Function to show current slide
+		function showSlide(index) {
+			// Hide all slides
+			for (var i = 0; i < totalSlides; i++) {
+				slides[i].classList.remove('slide--current');
+			}
+			// Show the slide at the specified index
+			slides[index].classList.add('slide--current');
+		}
+
+		// Function to move to the next slide
+		function nextSlide() {
+			currentIndex = (currentIndex + 1) % totalSlides;
+			showSlide(currentIndex);
+		}
+
+		// Auto play function
+		function autoPlay() {
+			// Move to the next slide every 5 seconds
+			setInterval(nextSlide, 5000);
+		}
+
+		// Start auto play
+		autoPlay();
+
+	</script>
+
+	<!-- JAVASCRIPT FILTER END -->
+	<!-- End Document
+================================================== -->
+
+
+
+
+
+</body>
+
+</html>
