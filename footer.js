@@ -7,11 +7,12 @@ document.write(`
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0 tt">
 
-            <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
-                style="width: 150px; height: 150px;">
-                <img src="coco-img/logo.jpg" height="140px"
-                    alt="" loading="lazy" style="border-radius: 42px;" />
-            </div>
+<div class="logo-container d-flex align-items-center justify-content-center mb-4 mx-auto"
+     style="width: 150px; height: 80px; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.2); border-radius: 12px;">
+    <img src="goura-img/logo.png" alt="Hotel Goura Logo" loading="lazy" 
+         style="max-width: 90%; max-height: 90%; object-fit: contain;" />
+</div>
+
 
 
 
@@ -41,19 +42,17 @@ document.write(`
 
             <ul class="list-unstyled" style="text-align: left;">
                   <li>
-                    <p><i class="ion-ios-location-outline" style="margin-right: 6px;"></i>Baga, River Side, near Karma Hotel and Royal Enfield Showroom, Goa</p>
+                    <p><i class="ion-ios-location-outline" style="margin-right: 6px;"></i>Daringbadi,Tinichaka,kandhamal,Odisha</p>
                 </li>
               
+             
                 <li>
-                    <p><i class="fa fa-phone" aria-hidden="true" style="margin-right: 6px;"></i>+91 9727544744 , </p>
-                </li>
-                <li>
-                    <p><i class="fa fa-phone" aria-hidden="true" style="margin-right: 6px;"></i>+91 9429647000 </p>
+                    <p><i class="fa fa-phone" aria-hidden="true" style="margin-right: 6px;"></i>+91 8917574194 </p>
                 </li>
               
                 <li>
                     <p><i class="fa fa-envelope" aria-hidden="true"
-                            style="margin-right: 6px;"></i>cocoheritageresortgoa@gmail.com </p>
+                            style="margin-right: 6px;"></i>hotelgoura34@gmail.com </p>
                 </li>
            
             </ul>
@@ -78,9 +77,7 @@ document.write(`
                 <li>
                     <p><a href="contact.html" class="text-white">Contact Us</a></p>
                 </li>
-                <li>
-                    <p><a href="services.html" class="text-white">Facilities</a></p>
-                </li>
+            
             </ul>
         </div>
         <!--Grid column-->
@@ -92,7 +89,7 @@ document.write(`
             <h5 class=" mb-4" style="color: white; text-align: left;">Find Us</h5>
 
             <ul class="list-unstyled" style="text-align: left;">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10422.649194995889!2d73.75425992203037!3d15.566413524503963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeb169cf9412f%3A0x14e359bfb23f7111!2sCoco%20Heritage%20Baga%20Resort!5e1!3m2!1sen!2sus!4v1751086853048!5m2!1sen!2sus" width="300" height="200" style="border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6789.689144607495!2d84.127795!3d19.906472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2319b3ffed46df%3A0x208c895e1c8e46a8!2sHotel%20Goura!5e1!3m2!1sen!2sin!4v1752911320306!5m2!1sen!2sin" width="300" height="180" style="border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               
               
             </ul>
@@ -103,79 +100,54 @@ document.write(`
 </div>
 <!-- Grid container -->
 
-<div class="section py-4 background-dark over-hide footer-bottom" style="background:black">
-    <div class="container">
-        <div class="row" style="justify-content:space-between">
-            <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
-                <p>2025 © <span style="color: #A78A52; font-weight: 900;">Coco Heritage Baga Resort</span>. All rights
-                    reserved.</p>
-            </div>
-            <!-- <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
-                
-            </div> -->
-            <div class="col-md-6 text-center text-md-right">
-                <!-- <div class="sub" style="  
-                display: flex;
-                width: 140px;
-                justify-content: space-between;
-                margin-left: 400px;">
-                <a href="#" class="fa fa-facebook" style="color: #ccc"></a>
-                <a href="#" class="fa fa-twitter" style="color: #ccc"></a>
-                <a href="#" class="fa fa-google" style="color: #ccc"></a>
-                <a href="#" class="fa fa-instagram" style="color: #ccc"></a>
-                </div> -->
-                <p>Designed &amp; Developed By <span><a href="https://bookingjini.com"
-                  style="color: #A78A52; font-weight: 900;">Bookingjini</a></span></p>
-            </div>
-        </div>
+<div class="section py-4 background-dark over-hide footer-bottom" style="background: black;">
+  <div class="container">
+    <div class="row align-items-center justify-content-between text-center text-md-left">
+
+      <div class="col-md-6 mb-2 mb-md-0">
+        <p style="margin: 0;">
+          2025 © <span style="color: #A78A52; font-weight: 900;">Hotel Goura</span>. All rights reserved.
+        </p>
+      </div>
+
+      <div class="col-md-6 text-center text-md-right">
+        <p style="margin: 0;">
+          Designed &amp; Developed By 
+          <a href="http://tripstar.co.in" target="_blank" style="color: #A78A52; font-weight: 900; text-decoration: none; display: inline-flex; align-items: center;">
+            <img src="https://tripstar.co.in/assets/my-img/logo.png" alt="Trip Star Logo" style="height: 30px; margin-right: 8px;"> 
+          </a>
+        </p>
+      </div>
+
     </div>
+  </div>
 </div>
+
 </footer>
-<script src="https://jiniassist.bookingjini.com/embed.js?company_id=4455"></script>
-<!-- Add this inside <body> -->
-<a href="https://cocoheritageresort.bookingjini.com" class="floating-book-now-btn" >
-  <span>B</span>
-  <span>O</span>
-  <span>O</span>
-  <span>K</span>
-  <span>N</span>
-  <span>O</span>
-  <span>W</span>
-</a>
+<!--Start of Tawk.to Script-->
+    <script>
+    (function (w, d, s, u) {
+    w.gbwawc = {
+    url: u,
+    options: {
+            waId: "+91 8917574194",
+            siteName: "Hotel Goura",
+            siteTag: "Available",
+            siteLogo: "https://sunrise-eco-homes.vercel.app/goura-img/logo.png",
+            widgetPosition: "LEFT",
+            triggerMessage: "Need any Help ",
+            welcomeMessage: "Welcome to Hotel Goura.. How can we help you ?",
+            brandColor: "#25D366",
+            messageText: "",
 
-<style>
-.floating-book-now-btn {
-  position: fixed;
-  top: 50%;
-  left: 0; /* Changed from left to right */
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  padding: 12px;
-  border-radius:  0 8px 8px 0 ; /* Left-rounded for right-side placement */
-  z-index: 99990;
-  box-shadow:
-    0px 20px 24px -4px rgba(16, 24, 40, 0.1),
-    0px 8px 8px -4px rgba(16, 24, 40, 0.04);
-  opacity: 1;
-  background-color: #ab8a62; /* fallback color */
-  color: #fff;
-  text-decoration: none;
-  transition:
-    opacity 0.5s ease-in,
-    transform 0.3s ease-in,
-    background-color 0.3s ease-in,
-    color 0.3s ease-in;
-}
-
-.floating-book-now-btn span {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-</style>
+        },
+    };
+    var h = d.getElementsByTagName(s)[0],
+    j = d.createElement(s);
+    j.async = true;
+    j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+    h.parentNode.insertBefore(j, h);
+    })(window, document, "script", "https://waw.gallabox.com");
+    </script>
+<!--End of Tawk.to Script-->
 `)

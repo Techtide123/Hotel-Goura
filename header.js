@@ -4,7 +4,7 @@ document.write(`
 			<div class="container">
 				<div class="row">
 					<div class="col-6 px-0 px-md-3 pl-1 py-3">
-						<span class="call-top">call us:</span> <a href="#" class="call-top">(381) 60 422 4256</a>
+						<span class="call-top">call us:</span> <a href="#" class="call-top">8917574194</a>
 					</div>
 					<div class="col-6 px-0 px-md-3 py-3 text-right">
 						<div class="lang-wrap">
@@ -27,7 +27,7 @@ document.write(`
 		<div class="menu">
 			<a href="index.html">
 				<div class="logo">
-					<img src="coco-img/logo-new.jpg" alt="" style="width: 100px; height: 60px; border-radius: 4%;">
+					<img src="goura-img/logo.png" alt="" style="width: 100px; height: 60px; border-radius: 4%;">
 				</div>
 			</a>
 			<ul>
@@ -62,7 +62,7 @@ document.write(`
 					<a href="contact.html">contact</a>
 				</li>
 				<li>
-					<a href="https://cocoheritageresort.bookingjini.com/"><span>book now</span></a>
+					<a href="#"><span>book now</span></a>
 				</li>
 			</ul>
 		</div>
