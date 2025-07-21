@@ -41,8 +41,7 @@ document.write(`
 				</li>
 				<li>
 					<a href="rooms.html">Accommodations</a>
-					<ul>
-						<li><a href="dormitory-room.html">Dormitory Rooms</a></li>
+					<ul style="border-radius: 5px;">
 						<li><a href="deluxe-room-2.html">Deluxe Rooms 2</a></li>
 						<li><a href="deluxe-room-4.html">Deluxe Rooms 4</a></li>
 						<li><a href="deluxe-room-6.html">Deluxe Rooms 6</a></li>
@@ -67,4 +66,4 @@ document.write(`
 			</ul>
 		</div>
 	</nav>
-`)
+`);
