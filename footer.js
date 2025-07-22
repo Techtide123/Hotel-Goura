@@ -68,14 +68,15 @@ document.write(`
                 <li>
                       <p><a href="index.html" class="text-white">Home</a></p>
                 </li>
-                <li>
-                    <p><a href="about.html" class="text-white">About Us</a></p>
-                </li>
+                
                 <li>
                     <p><a href="gallery.html" class="text-white">Gallery</a></p>
                 </li>
                 <li>
                     <p><a href="contact.html" class="text-white">Contact Us</a></p>
+                </li>
+                <li>
+                    <p><a href="policy.html" class="text-white">Policy</a></p>
                 </li>
             
             </ul>
@@ -150,4 +151,4 @@ document.write(`
     })(window, document, "script", "https://waw.gallabox.com");
     </script>
 <!--End of Tawk.to Script-->
-`)
+`);
