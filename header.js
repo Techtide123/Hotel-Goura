@@ -61,7 +61,10 @@ document.write(`
 					<a href="contact.html">contact</a>
 				</li>
 				<li>
-					<a href="#"><span>book now</span></a>
+					<a href="https://wa.me/918917574194?text=Hi%2C%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+  <span>book now</span>
+</a>
+
 				</li>
 			</ul>
 		</div>

@@ -25,14 +25,15 @@ document.write(`
 
 	<!-- Booking Form at Bottom -->
 	<div class="booking-wrapper">
-		<div class="booking-form">
-			<input type="date" class="input-date" placeholder="Check-in">
-			<input type="date" class="input-date" placeholder="Check-out">
-		
-			
-			<button class="book-btn">Book Now</button>
-		</div>
-	</div>
+  <div class="booking-form">
+    <input type="date" class="input-date" id="checkin" placeholder="Check-in">
+    <input type="date" class="input-date" id="checkout" placeholder="Check-out">
+
+    <a class="book-btn" id="whatsapp-link" href="https://wa.me/918917574194?text=Hi%2C%20I%20would%20like%20to%20book%20a%20service" target="_blank">
+      <span>book now</span>
+    </a>
+  </div>
+  </div>
 </div>
 
 <!-- Styles -->
@@ -226,4 +227,4 @@ window.onload = () => {
 	}, 500);
 }
 </script>
-`)
+`);
