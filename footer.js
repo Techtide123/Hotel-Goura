@@ -133,7 +133,7 @@ document.write(`
             waId: "+91 8917574194",
             siteName: "Hotel Goura",
             siteTag: "Available",
-            siteLogo: "https://sunrise-eco-homes.vercel.app/goura-img/logo.png",
+            siteLogo: "https://www.hotelgoura.com/goura-img/logo.png",
             widgetPosition: "LEFT",
             triggerMessage: "Need any Help ",
             welcomeMessage: "Welcome to Hotel Goura.. How can we help you ?",
