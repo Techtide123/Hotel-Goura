@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goura Hotel - Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="icon" type="image/png" href="goura-img/logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f5f5f5, #eae0d5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      flex-wrap: wrap;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    /* Left Panel */
+    .left {
+      background: linear-gradient(160deg, #b6985a, #f2e5c9);
+      color: #fff;
+      flex: 1;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .left h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .left p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #000;
+    }
+
+    .left p strong {
+      color: #000;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: white;
+      color: #25D366;
+      font-weight: 600;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: 2px solid #25D366;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .whatsapp-btn:hover {
+      background: #25D366;
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .whatsapp-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Right Panel */
+    .right {
+      flex: 1;
+      padding: 40px 30px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .right h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .right h2 {
+      font-size: 22px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .qr-code img {
+      width: 220px;
+      max-width: 100%;
+      border-radius: 12px;
+      border: 2px solid #b6985a;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .upi-info {
+      text-align: center;
+    }
+
+    .upi-info p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      word-break: break-all;
+    }
+
+    .copy-btn {
+      padding: 12px 30px;
+      background-color: #b6985a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .copy-btn:hover {
+      background-color: #a88540;
+    }
+
+    .success-message {
+      color: green;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+    }
+
+    /* Back Home Button */
+    .back-home {
+      display: block;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .back-home a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #b6985a;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .back-home a:hover {
+      background-color: #a88540;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        padding: 25px 20px;
+        text-align: center;
+      }
+
+      .left h1 {
+        font-size: 28px;
+      }
+
+      .right h1 {
+        font-size: 24px;
+      }
+
+      .right h2 {
+        font-size: 20px;
+      }
+
+      .whatsapp-btn,
+      .back-home a,
+      .copy-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="left">
+      <h1>Hotel Goura</h1>
+      <p><strong>Address:</strong> Daringbadi, Tinichaka, Kandhamal, Odisha</p>
+      <p><strong>Phone:</strong> +91 8917574194</p>
+      <p><strong>Email:</strong> hotelgoura34@gmail.com</p>
+      <a href="https://wa.me/918917574194" target="_blank" class="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+          class="whatsapp-icon"> Booking by WhatsApp
+      </a>
+    </div>
+
+    <div class="right">
+      <h1>Complete Your Payment</h1>
+      <h2>Scan the QR or Use UPI</h2>
+      <div class="qr-code">
+        <img src="goura-img/qr.jpeg" alt="QR Code">
+      </div>
+      <div class="upi-info">
+        <p>UPI ID: <span id="upi-id">8917574194@okbizaxis</span></p>
+        <button class="copy-btn" onclick="copyUPI()">Copy UPI ID</button>
+        <div class="success-message" id="success-msg">Copied!</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="back-home">
+    <a href="index.html"><i class="fas fa-arrow-left"></i> Return</a>
+  </div>
+
+  <script>
+    function copyUPI() {
+      const upiID = document.getElementById('upi-id').innerText;
+      navigator.clipboard.writeText(upiID).then(() => {
+        const msg = document.getElementById('success-msg');
+        msg.style.display = 'block';
+        setTimeout(() => {
+          msg.style.display = 'none';
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+
+</html>
