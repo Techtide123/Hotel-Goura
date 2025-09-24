@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Goura - Booking Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="goura-img/logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f5f5, #eae0d5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            max-width: 900px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            flex-wrap: wrap;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        /* Left Panel */
+        .left {
+            background: linear-gradient(160deg, #b6985a, #f2e5c9);
+            color: #fff;
+            flex: 1;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .left h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .left p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+        }
+
+        .left p strong {
+            color: #000;
+        }
+
+        /* Right Panel (Form) */
+        .right {
+            flex: 1;
+            padding: 40px 30px;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .right h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .right h2 {
+            font-size: 22px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        /* Form Styles */
+        .booking-form {
+            width: 100%;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #b6985a;
+            outline: none;
+        }
+
+        .btn-submit {
+            background-color: #27ae60;
+            border-color: #27ae60;
+            padding: 12px 20px;
+            font-size: 18px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #219653;
+            border-color: #219653;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Back Home Button */
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-home a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #b6985a;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-home a:hover {
+            background-color: #a88540;
+            transform: translateY(-2px);
+        }
+
+        /* QR Code Styling */
+        .qr-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .qr-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-height: 250px;
+            object-fit: contain;
+        }
+
+        /* UPI Section Styling */
+        .upi-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .upi-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        #upiId {
+            font-family: monospace;
+            font-size: 16px;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            word-break: break-all;
+        }
+
+        .copy-btn {
+            background: #b6985a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .copy-btn:hover {
+            background: #a88540;
+            transform: scale(1.05);
+        }
+
+        .copy-btn i {
+            font-size: 16px;
+        }
+
+        .upi-note {
+            font-size: 14px;
+            color: #000;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                padding: 25px 20px;
+                text-align: center;
+            }
+
+            .left h1 {
+                font-size: 28px;
+            }
+
+            .right h1 {
+                font-size: 24px;
+            }
+
+            .right h2 {
+                font-size: 20px;
+            }
+
+            .back-home a {
+                padding: 10px 20px;
+                font-size: 15px;
+            }
+
+            .qr-image {
+                max-height: 200px;
+            }
+
+            .upi-section {
+                padding: 12px;
+            }
+
+            #upiId {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+
+            .copy-btn {
+                padding: 6px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Hotel Goura</h1>
+            <p><strong>Address:</strong> Daringbadi, Tinichaka, Kandhamal, Odisha</p>
+            <p><strong>Phone:</strong> +91 8917574194</p>
+            <p><strong>Email:</strong> hotelgoura34@gmail.com</p>
+
+            <!-- QR Code with responsive styling -->
+            <div class="qr-container">
+                <img src="goura-img/qr.jpeg" alt="QR Code" class="qr-image">
+            </div>
+
+            <!-- UPI ID Section -->
+            <div class="upi-section">
+                <p><strong>UPI ID:</strong></p>
+                <div class="upi-container">
+                    <span style="font-family: monospace; color: #000;" id="upiId">8917574194@okbizaxis</span>
+                    <button id="copyUpiBtn" class="copy-btn" title="Copy UPI ID">
+                        <i class="far fa-copy"></i>
+                    </button>
+                </div>
+                <p class="upi-note">Scan the QR code or use the UPI ID above to make payment</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <h1>Book Your Stay</h1>
+            <h2>Fill in Your Details</h2>
+
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="customerName">Customer Name *</label>
+                    <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="extraCustomerName">Extra Customer Name</label>
+                    <input type="text" class="form-control" id="extraCustomerName"
+                        placeholder="Enter additional guest name">
+                </div>
+
+                <div class="form-group">
+                    <label for="comingFrom">Coming From *</label>
+                    <input type="text" class="form-control" id="comingFrom" placeholder="Enter your location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="roomType">Room Type *</label>
+                    <select class="form-control" id="roomType" required>
+                        <option value="">Select a room type</option>
+                        <option value="deluxe-room-2">Deluxe Room - 2 People</option>
+                        <option value="deluxe-room-4">Deluxe Room - 4 People</option>
+                        <option value="deluxe-room-6">Deluxe Room - 6 People</option>
+                        <option value="dormitory-room">Dormitory Room</option>
+                        <option value="standard-room-3">Standard Room - 3 People</option>
+                        <option value="standard-room-ac">Standard AC Room</option>
+                        <option value="standard-room-non-ac">Standard Non-AC Room</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number *</label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkInDate">Check In Date *</label>
+                    <input type="date" class="form-control" id="checkInDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkOutDate">Check Out Date *</label>
+                    <input type="date" class="form-control" id="checkOutDate" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Booking Details to WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="back-home">
+        <a href="index.html"><i class="fas fa-arrow-left"></i> Return to Home</a>
+    </div>
+
+    <script>
+        // Copy UPI ID to clipboard
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function () {
+                // Show success feedback
+                const copyBtn = document.getElementById('copyUpiBtn');
+                const originalHTML = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                copyBtn.style.background = '#27ae60';
+
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalHTML;
+                    copyBtn.style.background = '#b6985a';
+                }, 2000);
+            }).catch(function (err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+
+        // Set minimum date to today for both date inputs
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add click event for copy UPI button
+            document.getElementById('copyUpiBtn').addEventListener('click', function () {
+                const upiId = document.getElementById('upiId').textContent;
+                copyToClipboard(upiId);
+            });
+
+            // Set minimum dates
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('checkInDate').setAttribute('min', today);
+            document.getElementById('checkOutDate').setAttribute('min', today);
+
+            // Add form submission handler
+            document.getElementById('bookingForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get form values
+                const customerName = document.getElementById('customerName').value;
+                const extraCustomerName = document.getElementById('extraCustomerName').value;
+                const comingFrom = document.getElementById('comingFrom').value;
+                const phoneNumber = document.getElementById('phoneNumber').value;
+                const checkInDate = document.getElementById('checkInDate').value;
+                const checkOutDate = document.getElementById('checkOutDate').value;
+
+                // Format the message for WhatsApp
+                let message = `Hotel Booking Details:%0A%0A`;
+                message += `Customer Name: ${customerName}%0A`;
+                message += `Extra Customer Name: ${extraCustomerName || 'N/A'}%0A`;
+                message += `Coming From: ${comingFrom}%0A`;
+                message += `Phone Number: ${phoneNumber}%0A`;
+                message += `Check In Date: ${checkInDate}%0A`;
+                message += `Check Out Date: ${checkOutDate}%0A`;
+                message += `Room Type: ${document.getElementById('roomType').value}%0A`;
+
+                // Hotel's WhatsApp number
+                const whatsappNumber = '918917574194'; // Replace with actual number
+
+                // Open WhatsApp with the message
+                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+
+                // Reset form
+                this.reset();
+
+                // Set minimum dates again after reset
+                document.getElementById('checkInDate').setAttribute('min', today);
+                document.getElementById('checkOutDate').setAttribute('min', today);
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>

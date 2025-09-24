@@ -61,7 +61,7 @@ document.write(`
 					<a href="contact.html">contact</a>
 				</li>
 				<li>
-					<a href="booking.html" target="_blank">
+					<a href="booking-form.html" target="_blank">
   <span>book now</span>
 </a>
 

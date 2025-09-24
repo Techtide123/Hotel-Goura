@@ -29,7 +29,7 @@ document.write(`
     <input type="date" class="input-date" id="checkin" placeholder="Check-in">
     <input type="date" class="input-date" id="checkout" placeholder="Check-out">
 
-    <a class="book-btn" id="whatsapp-link" href="booking.html" target="_blank">
+    <a class="book-btn" id="whatsapp-link" href="booking-form.html" target="_blank">
       <span>book now</span>
     </a>
   </div>
