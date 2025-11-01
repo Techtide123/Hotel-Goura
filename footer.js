@@ -115,7 +115,7 @@ document.write(`
         <p style="margin: 0;">
           Designed &amp; Developed By 
           <a href="http://tripstar.co.in" target="_blank" style="color: #A78A52; font-weight: 900; text-decoration: none; display: inline-flex; align-items: center;">
-            <img src="https://tripstar.co.in/assets/my-img/logo.png" alt="Trip Star Logo" style="height: 30px; margin-right: 8px;"> 
+            <img src="https://tripstar.co.in/assets/my-img/logo.png" alt="Trip Star Logo" style="height: 40px; margin-right: 8px;"> 
           </a>
         </p>
       </div>
